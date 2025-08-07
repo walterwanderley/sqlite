@@ -3,7 +3,7 @@ package sqlite_test
 import (
 	"errors"
 	"fmt"
-	. "go.riyazali.net/sqlite"
+	. "github.com/walterwanderley/sqlite"
 	"testing"
 )
 
@@ -84,4 +84,3 @@ func TestLimit(t *testing.T) {
 		_ = db.Close()
 	}
 }
-

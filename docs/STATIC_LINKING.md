@@ -57,7 +57,7 @@ index 8283a68..f441fa0 100644
  }
 ```
 
-Then, you can use [`RegisterWith()`](https://pkg.go.dev/go.riyazali.net/sqlite#RegisterWith) to register the extension
+Then, you can use [`RegisterWith()`](https://pkg.go.dev/github.com/walterwanderley/sqlite#RegisterWith) to register the extension
 manually with each connection.
 
 ```golang

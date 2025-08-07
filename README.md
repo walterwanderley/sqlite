@@ -2,7 +2,7 @@
 
 [![Go v1.14](https://img.shields.io/badge/v1.14-blue.svg?labelColor=a8bfc0&color=5692c7&logoColor=fff&style=for-the-badge&logo=Go)](https://golang.org/doc/go1.14)
 [![CGO](https://img.shields.io/badge/requires_cgo-blue.svg?labelColor=a8bfc0&color=5692c7&logoColor=fff&style=for-the-badge&logo=Go)](https://golang.org/doc/go1.14)
-[![Godoc](https://img.shields.io/badge/godoc-reference-blue.svg?labelColor=a8bfc0&color=5692c7&logoColor=fff&style=for-the-badge)](https://pkg.go.dev/go.riyazali.net/sqlite)
+[![Godoc](https://img.shields.io/badge/godoc-reference-blue.svg?labelColor=a8bfc0&color=5692c7&logoColor=fff&style=for-the-badge)](https://pkg.go.dev/github.com/walterwanderley/sqlite)
 
 ## Overview
 
@@ -14,7 +14,7 @@ or [_linked statically at build-time_](https://www.sqlite.org/loadext.html#stati
 This package can be installed with `go get` as:
 
 ```shell
-$ go get -u go.riyazali.net/sqlite
+$ go get -u github.com/walterwanderley/sqlite
 ```
 
 **`sqlite`** is a `cgo` package and requires a working `c` compiler.
@@ -47,7 +47,7 @@ SQLITE3
 - [x] custom [`scalar`, `aggregate` and `window` functions](https://www.sqlite.org/appfunc.html)
 - [x] custom [`virtual table`](https://www.sqlite.org/vtab.html) <sup>does not support `xShadowName` and nested transations _yet_</sup>
 
-Each of the support feature provides an exported interface that the user code must implement. Refer to code and [godoc](https://pkg.go.dev/go.riyazali.net/sqlite)
+Each of the support feature provides an exported interface that the user code must implement. Refer to code and [godoc](https://pkg.go.dev/github.com/walterwanderley/sqlite)
 for more details.
 
 ## License

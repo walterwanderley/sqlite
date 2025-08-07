@@ -1,9 +1,8 @@
 package main
 
 import (
-	"go.riyazali.net/sqlite"
+	"github.com/walterwanderley/sqlite"
 )
-
 
 const magic = 0xfe
 
@@ -27,9 +26,9 @@ func (m *IsX) Args() int           { return 1 }
 func (m *IsX) Deterministic() bool { return true }
 func (m *IsX) Apply(ctx *sqlite.Context, values ...sqlite.Value) {
 	st := values[0].SubType()
-	if st == magic { 
+	if st == magic {
 		ctx.ResultInt(1)
-	}else {
+	} else {
 		ctx.ResultInt(0)
 	}
 }

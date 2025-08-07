@@ -1,10 +1,10 @@
 package main
 
 import (
-	"go.riyazali.net/sqlite"
+	"github.com/walterwanderley/sqlite"
 )
 
-//noinspection GoSnakeCaseUsage
+// noinspection GoSnakeCaseUsage
 const (
 	SERIES_COLUMN_VALUE = iota
 	SERIES_COLUMN_START

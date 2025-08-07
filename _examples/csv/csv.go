@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"go.riyazali.net/sqlite"
+	"github.com/walterwanderley/sqlite"
 )
 
 // CsvModule provides an implementation of an sqlite virtual table for reading CSV files.
@@ -17,9 +17,10 @@ import (
 type CsvModule struct{}
 
 // Parameters:
-//    filename=FILENAME          Name of file containing CSV content
-//    header=YES|NO              First row of CSV defines the names of
-//                               columns if "yes".  Default "no".
+//
+//	filename=FILENAME          Name of file containing CSV content
+//	header=YES|NO              First row of CSV defines the names of
+//	                           columns if "yes".  Default "no".
 func (c *CsvModule) Connect(_ *sqlite.Conn, args []string, declare func(string) error) (_ sqlite.VirtualTable, err error) {
 	args = args[2:]
 	var table = &CsvVirtualTable{}
